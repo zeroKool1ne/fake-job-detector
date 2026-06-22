@@ -58,16 +58,29 @@ jupyter notebook fake_job_detector.ipynb
 streamlit run app.py
 ```
 
+## Tools & tech
+Python · pandas · scikit-learn · NLTK · matplotlib · Streamlit · joblib
+
 ## Repo structure
 ```
 fake-job-detector/
-├── data/                      # dataset
-├── fake_job_detector.ipynb    # full pipeline (analysis -> model)
-├── app.py                     # Streamlit demo
-├── fake_job_model.joblib      # saved best model
-├── requirements.txt
+├── data/                      # dataset (fake_job_postings.csv)
+├── assets/                    # LinkedIn QR for the presentation
+├── fake_job_detector.ipynb    # full pipeline: cleaning -> EDA -> model search -> best model
+├── app.py                     # Streamlit demo (paste a posting -> real/fake)
+├── presentation.py            # Streamlit slide deck for the project presentation
+├── fake_job_model.joblib      # the saved best model (LinearSVC)
+├── requirements.txt           # dependencies
 └── README.md
 ```
 
-## Author
-Daniel Vasic · June 2026
+## What I'd add next
+- Remove company-name leakage from the features
+- Add a "contains e-mail address" flag as an extra signal
+- Deploy the demo publicly
+
+## About me
+**Daniel Vasic** — software developer (Fachinformatiker, IHK) specialising into Data & Analytics.
+- LinkedIn: https://www.linkedin.com/in/daniel-v-5a3312180
+
+_June 2026_
